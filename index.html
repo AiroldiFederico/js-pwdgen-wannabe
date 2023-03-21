@@ -12,7 +12,7 @@
         <!-- Style CSS -->
         <link rel="stylesheet" href="./asset/css/reset.css">
         <link rel="stylesheet" href="./asset/css/style.css">
-        <link rel="stylesheet" href="./asset/css/media-queries.css">
+        <!-- <link rel="stylesheet" href="./asset/css/media-queries.css"> -->
 
         <!-- Font style -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +31,11 @@
 
  
         
-        First name: <input type="text" id="name"><br>
-        Last name: <input type="text" id="lstname"><br>
-        Color: <input type="text" id="color"><br>
+        First name: <input type="text" id="name" value="" name="fname"><br>
+        Last name: <input type="text" id="lstname" value="" name="lname"><br>
+        Color: <input type="text" id="color" value="" name="color"><br>
 
-        <input type="button" id="btn1" value="Submit">
+        <button onclick="getUserInput()">Submit</button>
         
         <p id="pwd"></p>
 

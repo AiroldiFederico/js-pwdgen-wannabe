@@ -2,33 +2,10 @@
 
 
 
-// DICHIARAZIONI VARIABILI
+function getUserInput() {
+    let nome = document.getElementById('name').value;
+    let cognome = document.getElementById('lstname').value;  
+    let colore = document.getElementById('color').value;
 
-// nome utente
-const nome = document.getElementById('name');
-
-// cognome utente
-const cognome = document.getElementById('lstname');
-
-// colore preferito
-const colore = document.getElementById('color');
-
-// input btn
-const btn1 = document.getElementById('btn1');
-
-// output testo
-const output = document.getElementById('pwd');
-
-
-// pwd generator
-const pwdweak = nome + cognome + colore + 21;
-
-
-
-// input by user
-
-function f1() {
-    output.innerText = pwdweak;
+    document.getElementById('pwd').innerHTML = nome + cognome + colore + '21';
 }
-
-btn1.addEventListener('click',f1);
